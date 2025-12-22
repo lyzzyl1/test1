@@ -7,13 +7,13 @@ import random
 st.set_page_config(page_title="第三题 - 生态金字塔", layout="wide")
 
 # 在每个页面的开头都添加
-st.markdown("""
+/*st.markdown("""
 <style>
     [data-testid="stSidebarNav"] {
         display: none;
     }
 </style>
-""", unsafe_allow_html=True)
+""", unsafe_allow_html=True)*/
 
 st.title("第三题：生态系统中的能量流动分析")
 st.markdown("---")
@@ -92,4 +92,5 @@ with col_mid:
 with col_right:
     if st.button("下一题 ➡️", use_container_width=True):
         st.session_state.history = []
+
         st.switch_page("pages/q3.py")
