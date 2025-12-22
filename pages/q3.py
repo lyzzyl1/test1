@@ -7,13 +7,13 @@ import random
 st.set_page_config(page_title="第三题 - 生态金字塔", layout="wide")
 
 # 在每个页面的开头都添加
-/*st.markdown("""
+st.markdown("""
 <style>
     [data-testid="stSidebarNav"] {
         display: none;
     }
 </style>
-""", unsafe_allow_html=True)*/
+""", unsafe_allow_html=True)
 
 st.title("第三题：生态系统中的能量流动分析")
 st.markdown("---")
@@ -39,11 +39,11 @@ st.markdown("""
 
 # 2. 图片
 st.subheader("🔬 生态系统能量金字塔示意图")
-st.image(
+/*st.image(
     "pages/p3.PNG",
     caption="图1：典型的生态系统能量金字塔，显示能量在营养级间的递减关系",
     use_container_width=True
-)
+)*/
 
 # 3. 用户回答的文本框
 st.subheader("📝 请在此输入您的分析回答")
@@ -94,3 +94,4 @@ with col_right:
         st.session_state.history = []
 
         st.switch_page("pages/q3.py")
+
