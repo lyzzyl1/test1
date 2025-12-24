@@ -3,6 +3,7 @@ import pandas as pd
 import plotly.express as px
 import math
 import random
+from pathlib import Path
 
 st.set_page_config(page_title="第三题 - 生态金字塔", layout="wide")
 
@@ -95,6 +96,7 @@ with col_right:
         st.session_state.history = []
 
         st.switch_page("pages/q3.py")
+
 
 
 
